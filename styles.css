@@ -1,0 +1,114 @@
+body {
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url(arkaplan.jpg);
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.navbar a {
+    color: #0d7345;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+}
+
+    .logo:hover{
+        font-weight: bold;
+    }
+
+.social-links img {
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 100px;
+}
+
+.social-links :hover{
+    width: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.welcome-section {
+    color: #005E7A;
+    font-size: 40px;
+}
+
+.welcome-section h1 {
+    font-size: 40px;
+}
+
+.welcome-section h2 {
+    font-size: 30px;
+}
+
+.welcome-section h3 {
+    font-size: 20px;
+}
+
+.video-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#bg-video {
+    width: 100%;
+    max-width: 500px;
+    border: 5px solid #14926a;
+    border-radius: 10px;
+}
+
+.about-section {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.photo img {
+    width: 300px; /* Fotoğraf genişliği */
+    border-radius: 50%; /* Yuvarlak fotoğraf */
+    margin-right: 20px;
+}
+
+.bio {
+    max-width: 600px; /* Bio kısmı için maksimum genişlik */
+    font-size:25px;
+}
+
+.footer {
+    background-color: #000000; /* Footer arka plan rengi */
+    color: #fff; /* Yazı rengi */
+    text-align: center; /* Yazıyı ortala */
+    padding: 10px; /* İçerik için boşluk */
+    position: relative; /* Footer'ı konumlandır */
+    bottom: 0; /* Sayfanın en altına yerleştir */
+    width: 100%; /* Tam genişlik */
+    margin-top: 20px; /* Üstte boşluk */
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr; /* Tek sütun yap */
+        margin: 0 10px; /* Yan boşlukları azalt */
+    }
+
+    #bg-video{
+        width: 100%;
+    }
+}
+
